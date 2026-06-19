@@ -411,24 +411,24 @@
     LR_NAV {
       bindings = <
       // row 1
-      &trans   &trans   &trans   &tog LR_MOUSE   &trans   &msc SCRL_UP              &kp PG_UP       &kp HOME   &kp UP     &kp END     &none    &kp K_APP
+      &trans   &trans   &trans   &trans   &trans   &msc SCRL_UP              &kp PG_UP       &kp HOME   &kp UP     &kp END     &none            &none
       // row 2
-      &trans   &trans   &trans   &trans          &trans   &msc SCRL_DOWN            &kp PG_DN       &kp LEFT   &kp DOWN   &kp RIGHT   &none    &trans
+      &trans   &trans   &trans   &trans   &trans   &msc SCRL_DOWN            &kp PG_DN       &kp LEFT   &kp DOWN   &kp RIGHT   &tog LR_MOUSE    &trans
       // row 3
-      &trans   &trans   &trans   &trans          &trans   &trans                    &tog LR_MOUSE   &none      &none      &none       &trans   &trans
+      &trans   &trans   &trans   &trans   &trans   &trans                    &none           &none      &none      &none       &kp K_APP        &trans
       // thumb row
-      &trans   &trans   &trans   &trans                                             &trans   &trans   &trans   &trans
+      &trans   &trans   &trans   &trans                                      &trans   &trans   &trans   &trans
       >;
     };
     
     LR_MOUSE {
       bindings = <
       // row 1
-      &trans   &trans   &trans   &tog LR_MOUSE    &trans           &msc SCRL_UP              &msc SCRL_UP     &none            &mmv MOVE_UP     &none             &none    &kp K_APP
+      &trans   &trans   &trans   &trans           &trans           &msc SCRL_UP              &msc SCRL_UP     &none            &mmv MOVE_UP     &none             &none            &none
       // row 2
-      &trans   &trans   &trans   &mo LR_MOUSE_S   &mo LR_MOUSE_F   &msc SCRL_DOWN            &msc SCRL_DOWN   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none    &trans
+      &trans   &trans   &trans   &mo LR_MOUSE_S   &mo LR_MOUSE_F   &msc SCRL_DOWN            &msc SCRL_DOWN   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &tog LR_MOUSE    &trans
       // row 3
-      &trans   &trans   &trans   &trans           &trans           &trans                    &tog LR_MOUSE    &mkp LCLK        &mkp MCLK        &mkp RCLK         &trans   &trans
+      &trans   &trans   &trans   &trans           &trans           &trans                    &none            &mkp LCLK        &mkp MCLK        &mkp RCLK         &trans           &trans
       // thumb row
       &trans   &trans   &trans   &trans                                                      &trans   &trans   &trans   &trans
       >;
